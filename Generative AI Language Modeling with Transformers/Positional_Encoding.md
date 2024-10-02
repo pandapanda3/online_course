@@ -11,9 +11,18 @@ Position coding in the Transformer model typically uses **sine and cosine** func
 - Encoding for even dimensions uses the sine function
 - Encoding for odd dimensions uses the cosine function
 
+![Example of Positionl Encoding](./pictures/Postional_encoding.png)
+
 # The nature of Positional Encoding
 - **same dimensions**: positional encoding has the same dimensions as the input word vector, so that it can be added directly. 
 - **Sensitive to position differences**: Because sine and cosine functions are used in the coding, the encoding differences at different positions gradually change with distance, so the model can capture the relative relationship between the positions.
+
+# Addition of Embeddings
+The combination of these three embeddings—input embedding, positional encoding, and segment embedding—gives the model a rich representation of each word, including its meaning, position, and sentence context.
+
+- What the word is (input embedding),
+- Where it is in the sequence (positional encoding),
+- Which segment it belongs to (segment embedding, if applicable).
 
 # Positional Encoding in Pytorch
 ```python
