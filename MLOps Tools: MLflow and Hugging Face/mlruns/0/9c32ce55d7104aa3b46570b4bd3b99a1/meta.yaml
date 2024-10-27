@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/zhangpanpan/Mscstudy/github/online_course/online_course/MLOps%20Tools%3A%20MLflow%20and%20Hugging%20Face/mlruns/0/9c32ce55d7104aa3b46570b4bd3b99a1/artifacts
+end_time: 1729869518547
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9c32ce55d7104aa3b46570b4bd3b99a1
+run_name: intelligent-ox-128
+run_uuid: 9c32ce55d7104aa3b46570b4bd3b99a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729869518490
+status: 3
+tags: []
+user_id: zhangpanpan

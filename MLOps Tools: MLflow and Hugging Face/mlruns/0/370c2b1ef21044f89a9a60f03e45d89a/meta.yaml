@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/zhangpanpan/Mscstudy/github/online_course/online_course/MLOps%20Tools%3A%20MLflow%20and%20Hugging%20Face/mlruns/0/370c2b1ef21044f89a9a60f03e45d89a/artifacts
+end_time: 1729866855687
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 370c2b1ef21044f89a9a60f03e45d89a
+run_name: flawless-boar-364
+run_uuid: 370c2b1ef21044f89a9a60f03e45d89a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729866855667
+status: 3
+tags: []
+user_id: zhangpanpan
