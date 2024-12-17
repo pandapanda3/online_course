@@ -141,3 +141,105 @@
 
 **Next**: Use `X` matrix in logistic regression.
 ![Code to Extract Feature](image/CodetoExtractFeature.png)
+
+
+# Logistic Regression Overview
+
+## What is Logistic Regression?  
+Logistic regression is a method to predict if a tweet has **positive** or **negative** sentiment using extracted features.
+
+## Key Points  
+1. **Sigmoid Function**:  
+   - Outputs a probability between **0** and **1**.  
+   - If the result ≥ 0.5 → Positive sentiment.  
+   - If the result < 0.5 → Negative sentiment.  
+
+2. **How it Works**:  
+   - **Input**: Features (e.g., word frequencies).  
+   - **Output**: Prediction (Positive or Negative).  
+   - The function depends on:  
+     - Parameters \( \Theta \) (weights).  
+     - Feature vector \( X \) (tweet features).  
+
+3. **Example in Sentiment Analysis**:  
+   - Tweets are preprocessed: remove handles, lowercase words, and reduce to stems.  
+   - Features (e.g., counts of positive and negative words) are extracted.  
+   - Using optimized parameters, the sigmoid function predicts the sentiment.  
+ 
+![Logistic Regression](image/Logistic Regression.png)
+
+## Training Logistic Regression Classifier
+
+### Objective  
+Learn how to find the optimal **theta** (parameters) from scratch to train a logistic regression model using **gradient descent**.
+
+
+### Key Steps in Training  
+
+1. **Initialize Parameters**:  
+   - Start with an initial set of parameters \( \theta \) (e.g., all zeros).
+
+2. **Use the Logistic Function**:  
+   - Apply the **sigmoid function** to compute predictions for each observation.
+
+3. **Compute Gradients**:  
+   - Calculate the **gradient of the cost function** to determine the direction to update \( \theta \).  
+
+4. **Update Parameters**:  
+   - Adjust \( \theta \) iteratively in the direction of the gradient.
+
+5. **Evaluate Cost**:  
+   - Compute the cost \( J \) after each iteration to check if the training is improving.  
+
+6. **Stop Condition**:  
+   - Training stops when:  
+     - A predefined number of iterations is reached.  
+     - The cost function converges to a minimum.
+
+### Gradient Descent Algorithm  
+- Gradient descent **minimizes the cost function** by iteratively updating \( \theta \).  
+- Over time, the cost function decreases, as shown in the contour plots (left) and its evolution over iterations (right).
+
+### Evaluating Your Classifier  
+- Once you have the final \( \theta \), you plug it into the **sigmoid function** to predict outputs.  
+- Evaluate whether your classifier performs well or poorly.  
+
+![Training Logistic Regression](image/Logistic Regression Training.png)
+
+# Evaluating the Logistic Regression Model
+
+## Overview  
+This step focuses on evaluating how well the trained logistic regression model performs on unseen data using the **validation set**.
+
+
+## Key Steps  
+
+1. **Validation Data**:  
+   Use the validation set (**X_val** and **Y_val**) that was set aside during training.  
+
+2. **Make Predictions**:  
+   - Use the trained parameters (**Theta**) to compute predictions.  
+   - Compare each prediction to a threshold (e.g., 0.5):  
+     - If the value is ≥ 0.5, predict **Positive**.  
+     - Otherwise, predict **Negative**.
+
+3. **Compare Predictions to True Labels**:  
+   - Check if each prediction matches the true label:  
+     - Correct prediction → 1  
+     - Incorrect prediction → 0  
+
+4. **Calculate Accuracy**:  
+   - Accuracy = Proportion of correct predictions over the total number of observations.  
+
+
+## Example  
+For 5 predictions:  
+- Compare predictions to true labels.  
+- Count the correct predictions.  
+- Divide by the total number of examples to get the accuracy (e.g., 80%).
+
+![Testing Logistic Regression](image/Logistic Regression Testing.png)
+
+# Logistic Regression: Cost Function
+![Logistic Regression: Cost Function](image/Logistic Regression Cost Function1.png)
+![Logistic Regression: Cost Function](image/Logistic Regression Cost Function2.png)
