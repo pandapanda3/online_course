@@ -166,7 +166,7 @@ Logistic regression is a method to predict if a tweet has **positive** or **nega
    - Features (e.g., counts of positive and negative words) are extracted.  
    - Using optimized parameters, the sigmoid function predicts the sentiment.  
  
-![Logistic Regression](image/Logistic Regression.png)
+![Logistic Regression](image/Logistic%20Regression.png)
 
 ## Training Logistic Regression Classifier
 
@@ -204,7 +204,7 @@ Learn how to find the optimal **theta** (parameters) from scratch to train a log
 - Once you have the final \( \theta \), you plug it into the **sigmoid function** to predict outputs.  
 - Evaluate whether your classifier performs well or poorly.  
 
-![Training Logistic Regression](image/Logistic Regression Training.png)
+![Training Logistic Regression](image/Logistic%20Regression%20Training.png)
 
 # Evaluating the Logistic Regression Model
 
@@ -238,8 +238,8 @@ For 5 predictions:
 - Count the correct predictions.  
 - Divide by the total number of examples to get the accuracy (e.g., 80%).
 
-![Testing Logistic Regression](image/Logistic Regression Testing.png)
+![Testing Logistic Regression](image/Logistic%20Regression%20Testing.png)
 
 # Logistic Regression: Cost Function
-![Logistic Regression: Cost Function](image/Logistic Regression Cost Function1.png)
-![Logistic Regression: Cost Function](image/Logistic Regression Cost Function2.png)
+![Logistic Regression: Cost Function](image/Logistic%20Regression%20Cost%20Function1.png)
+![Logistic Regression: Cost Function](image/Logistic%20Regression%20Cost%20Function2.png)
